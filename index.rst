@@ -35,33 +35,35 @@ Times of events
 
 .. table:: Timestamps for data with FCU state labels.
 
-   +-------------+--------------------------+--------------------------+
-   | FCU state   | Start Time               | End Time                 |
-   +=============+==========================+==========================+
-   | All off     | '2023-12-07 14:20:00.00' | '2023-12-07 14:30:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 100% | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 10%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 20%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 30%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 40%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 50%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 60%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 70%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 80%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 90%  | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
-   | All on 100% | '2023-12-07 14:33:00.00' | '2023-12-07 14:50:00.00' |
-   +-------------+--------------------------+--------------------------+
+   +---------+------------------------+------------------------+
+   |FCU state| Start Time             | End Time               |
+   +=========+========================+========================+
+   |       0 | 2023-12-07 14:20:00.00 | 2023-12-07 14:30:00.00 |
+   +---------+------------------------+------------------------+
+   |     100 | 2023-12-07 14:33:00.00 | 2023-12-07 14:50:00.00 |
+   +---------+------------------------+------------------------+
+   |      10 | 2023-12-07 14:55:30.00 | 2023-12-07 14:59:55.00 |
+   +---------+------------------------+------------------------+
+   |      20 | 2023-12-07 15:00:05.00 | 2023-12-07 15:04:00.00 |
+   +---------+------------------------+------------------------+
+   |      30 | 2023-12-07 15:05:05.00 | 2023-12-07 15:10:00.00 |
+   +---------+------------------------+------------------------+
+   |      40 | 2023-12-07 15:12:30.00 | 2023-12-07 15:14:30.00 |
+   +---------+------------------------+------------------------+
+   |      50 | 2023-12-07 15:16:15.00 | 2023-12-07 15:20:00.00 |
+   +---------+------------------------+------------------------+
+   |      60 | 2023-12-07 15:21:40.00 | 2023-12-07 15:25:00.00 |
+   +---------+------------------------+------------------------+
+   |      70 | 2023-12-07 15:26:05.00 | 2023-12-07 15:30:00.00 |
+   +---------+------------------------+------------------------+
+   |      80 | 2023-12-07 15:30:05.00 | 2023-12-07 15:40:00.00 |
+   +---------+------------------------+------------------------+
+   |      90 | 2023-12-07 15:40:40.00 | 2023-12-07 15:43:40.00 |
+   +---------+------------------------+------------------------+
+   |      90 | 2023-12-07 15:48:55.00 | 2023-12-07 15:50:10.00 |
+   +---------+------------------------+------------------------+
+   |     100 | 2023-12-07 15:53:00.00 | 2023-12-07 16:09:00.00 |
+   +---------+------------------------+------------------------+
 
 First event All 100% vs off
 ===========================
@@ -91,7 +93,7 @@ Telemetry
 
    dc accelerometers telemetry for all FCUs at 100% (blue) and all off (orange).
 
-See appendix for IMS behaviour the system was not sensitive to vibrations.
+See appendix for IMS behavior the system was not sensitive to vibrations.
 
 PSD analysis
 ------------
@@ -125,8 +127,44 @@ VMS low frequency
    :target: ../_images/vms_telemetry_zoom_1.png
    :alt: event 1 vms telemetry zoom
 
-   VMS telemetry zoom for all FCUs at 100% (blue) and all off (orange).
+   VMS telemetry zoom for all FCUs at 100% (blue) and all off (orange). We see a low frequency oscillation that could be beating due to variations in the FCU frequencies.
 
+PSD analysis for FCUs powered at different speeds
+=================================================
+First we show PSDs (nomalized to have a peak of 1) for each fan state and each channel.
+
+.. figure:: /_static/images/total_1_psd_comp.png
+   :name: fig-total-psd-comp-1
+   :target: ../_images/total_1_psd_comp.png
+   :alt: compare psd across fan states
+
+   The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 1 M1M3 VMS.
+
+.. figure:: /_static/images/total_2_psd_comp.png
+   :name: fig-total-psd-comp-2
+   :target: ../_images/total_2_psd_comp.png
+   :alt: compare psd across fan states
+
+   The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 2 M1M3 VMS.
+
+.. figure:: /_static/images/total_3_psd_comp.png
+   :name: fig-total-psd-comp-3
+   :target: ../_images/total_3_psd_comp.png
+   :alt: compare psd across fan states
+
+   The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 3 M1M3 VMS.
+
+.. figure:: /_static/images/displacement_comp.png
+   :name: fig-displacement-comp
+   :target: ../_images/displacement_comp.png
+
+   Comparison of the displacement rms for all frequencies above 1 Hz as a function of fan power state, each row shows the behavior for one of the VMS channels.
+
+.. figure:: /_static/images/duration_comp.png
+   :name: fig-duration-comp
+   :target: ../_images/duration_comp.png
+
+   Comparison of the duration of the measurement window for the measurement of the VMS telemetry a function of fan power state.
 
 Appendix
 =========
