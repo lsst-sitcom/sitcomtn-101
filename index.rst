@@ -1,6 +1,12 @@
-:tocdepth: 1
+#####################################################
+Investigation into vibrations in the M1M3 due to FCUs
+#####################################################
 
-.. sectnum::
+.. abstract::
+
+   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality
+
+
 
 .. Metadata such as the title, authors, and description are set in metadata.yaml
 
@@ -74,21 +80,21 @@ Telemetry
 
 .. figure:: /_static/images/vms_telemetry_1.png
    :name: fig-vms-telemetry-1
-   :target: ../_images/vms_telemetry_1.png
+   :target: _images/vms_telemetry_1.png
    :alt: event 1 vms telemetry
 
    VMS telemetry for all FCUs at 100% (blue) and all off (orange).
 
 .. figure:: /_static/images/hardpoints_telemetry_1.png
    :name: fig-hardpoints-telemetry-1
-   :target: ../_images/hardpoints_telemetry_1.png
+   :target: _images/hardpoints_telemetry_1.png
    :alt: event 1 hardpoints telemetry
 
    hardpoints telemetry for all FCUs at 100% (blue) and all off (orange).
 
 .. figure:: /_static/images/dc_accelerometers_telemetry_1.png
    :name: fig-dc-accelerometers-telemetry-1
-   :target: ../_images/dc_accelerometers_telemetry_1.png
+   :target: _images/dc_accelerometers_telemetry_1.png
    :alt: event 1 dc accelerometers telemetry
 
    dc accelerometers telemetry for all FCUs at 100% (blue) and all off (orange).
@@ -100,21 +106,21 @@ PSD analysis
 
 .. figure:: /_static/images/vms_psd_1.png
    :name: fig-vms-psd-1
-   :target: ../_images/vms_psd_1.png
+   :target: _images/vms_psd_1.png
    :alt: event 1 vms psd
 
    VMS psd for all FCUs at 100% (blue) and all off (orange).
 
 .. figure:: /_static/images/hardpoints_psd_1.png
    :name: fig-hardpoints-psd-1
-   :target: ../_images/hardpoints_psd_1.png
+   :target: _images/hardpoints_psd_1.png
    :alt: event 1 hardpoints psd
 
    hardpoints psd for all FCUs at 100% (blue) and all off (orange).
 
 .. figure:: /_static/images/dc_accelerometers_psd_1.png
    :name: fig-dc-accelerometers-psd-1
-   :target: ../_images/dc_accelerometers_psd_1.png
+   :target: _images/dc_accelerometers_psd_1.png
    :alt: event 1 dc accelerometers psd
 
    dc accelerometers psd for all FCUs at 100% (blue) and all off (orange).
@@ -124,7 +130,7 @@ VMS low frequency
 
 .. figure:: /_static/images/vms_telemetry_zoom_1.png
    :name: fig-vms-telemetry-zoom-1
-   :target: ../_images/vms_telemetry_zoom_1.png
+   :target: _images/vms_telemetry_zoom_1.png
    :alt: event 1 vms telemetry zoom
 
    VMS telemetry zoom for all FCUs at 100% (blue) and all off (orange). We see a low frequency oscillation that could be beating due to variations in the FCU frequencies.
@@ -135,34 +141,34 @@ First we show PSDs (nomalized to have a peak of 1) for each fan state and each c
 
 .. figure:: /_static/images/total_1_psd_comp.png
    :name: fig-total-psd-comp-1
-   :target: ../_images/total_1_psd_comp.png
+   :target: _images/total_1_psd_comp.png
    :alt: compare psd across fan states
 
    The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 1 M1M3 VMS.
 
 .. figure:: /_static/images/total_2_psd_comp.png
    :name: fig-total-psd-comp-2
-   :target: ../_images/total_2_psd_comp.png
+   :target: _images/total_2_psd_comp.png
    :alt: compare psd across fan states
 
    The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 2 M1M3 VMS.
 
 .. figure:: /_static/images/total_3_psd_comp.png
    :name: fig-total-psd-comp-3
-   :target: ../_images/total_3_psd_comp.png
+   :target: _images/total_3_psd_comp.png
    :alt: compare psd across fan states
 
    The legend shows the commanded power for each line (going from off, 0%, to full power, 100%). This data is the total acceleration from channel 3 M1M3 VMS.
 
 .. figure:: /_static/images/displacement_comp.png
    :name: fig-displacement-comp
-   :target: ../_images/displacement_comp.png
+   :target: _images/displacement_comp.png
 
    Comparison of the displacement rms for all frequencies above 1 Hz as a function of fan power state, each row shows the behavior for one of the VMS channels.
 
 .. figure:: /_static/images/duration_comp.png
    :name: fig-duration-comp
-   :target: ../_images/duration_comp.png
+   :target: _images/duration_comp.png
 
    Comparison of the duration of the measurement window for the measurement of the VMS telemetry a function of fan power state.
 
@@ -170,14 +176,14 @@ Appendix
 =========
 .. figure:: /_static/images/ims_positions_1.png
    :name: fig-ims-positions
-   :target: ../_images/ims_positions_1.png
+   :target: _images/ims_positions_1.png
    :alt: event 1 IMS positions telemetry
 
    IMS positions during event 1
 
 .. figure:: /_static/images/ims_rotations_1.png
    :name: fig-ims-rotations
-   :target: ../_images/ims_rotations_1.png
+   :target: _images/ims_rotations_1.png
    :alt: event 1 IMS rotations telemetry
 
    IMS rotations during event 1
