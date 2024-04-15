@@ -1,6 +1,6 @@
-#####################################################
-Investigation into vibrations in the M1M3 due to FCUs
-#####################################################
+###############################################################
+Investigation into vibrations in the M1M3 surrogate due to FCUs
+###############################################################
 
 .. abstract::
 
@@ -266,4 +266,142 @@ In this appendix we put all the plots corresponding to the PSD analysis for the 
 
    PSD acceleration for sensor 3 - z axis and for every fan speed
 
+.. figure:: /_static/images/psd_speed_0.png
+   :name: psd_speed_0
+   :target: _images/psd_speed_0.png
+   :alt: PSD acceleration for a fan speed set at 0% and for the 3 sensors and the 3 axes
 
+   PSD acceleration for a fan speed set at 0% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_10.png
+   :name: psd_speed_10
+   :target: _images/psd_speed_10.png
+   :alt: PSD acceleration for a fan speed set at 10% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 10% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_20.png
+   :name: psd_speed_20
+   :target: _images/psd_speed_20.png
+   :alt: PSD acceleration for a fan speed set at 20% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 20% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_30.png
+   :name: psd_speed_30
+   :target: _images/psd_speed_30.png
+   :alt: PSD acceleration for a fan speed set at 30% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 30% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_40.png
+   :name: psd_speed_40
+   :target: _images/psd_speed_40.png
+   :alt: PSD acceleration for a fan speed set at 40% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 40% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_50.png
+   :name: psd_speed_50
+   :target: _images/psd_speed_50.png
+   :alt: PSD acceleration for a fan speed set at 50% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 60% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_60.png
+   :name: psd_speed_60
+   :target: _images/psd_speed_60.png
+   :alt: PSD acceleration for a fan speed set at 60% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 60% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_70.png
+   :name: psd_speed_70
+   :target: _images/psd_speed_70.png
+   :alt: PSD acceleration for a fan speed set at 70% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 70% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_80.png
+   :name: psd_speed_80_b
+   :target: _images/psd_speed_80_b.png
+   :alt: PSD acceleration for a fan speed set at 80% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 80% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_90.png
+   :name: psd_speed_90
+   :target: _images/psd_speed_90.png
+   :alt: PSD acceleration for a fan speed set at 90% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 90% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_speed_100.png
+   :name: psd_speed_100
+   :target: _images/psd_speed_100.png
+   :alt: PSD acceleration for a fan speed set at 100% and for the 3 sensors and the 3 axes
+
+   PSD acceleration for a fan speed set at 100% and for the 3 sensors and the 3 axes
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_x.png
+   :name: psd_cumul_disp_sensor_1_axis_x_b
+   :target: _psd_cumul_disp_sensor_1_axis_x.png
+   :alt: Cumulative displacement for Sensor 1 and x axis
+
+   Cumulative displacement for Sensor 1 and x axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_y.png
+   :name: psd_cumul_disp_sensor_1_axis_y
+   :target: _psd_cumul_disp_sensor_1_axis_y.png
+   :alt: Cumulative displacement for Sensor 1 and y axis
+
+   Cumulative displacement for Sensor 1 and y axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_z.png
+   :name: psd_cumul_disp_sensor_1_axis_z
+   :target: _psd_cumul_disp_sensor_1_axis_z.png
+   :alt: Cumulative displacement for Sensor 1 and z axis
+
+   Cumulative displacement for Sensor 1 and z axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_x.png
+   :name: psd_cumul_disp_sensor_2_axis_x
+   :target: _psd_cumul_disp_sensor_2_axis_x.png
+   :alt: Cumulative displacement for Sensor 2 and x axis
+
+   Cumulative displacement for Sensor 2 and x axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_y.png
+   :name: psd_cumul_disp_sensor_2_axis_y
+   :target: _psd_cumul_disp_sensor_2_axis_y.png
+   :alt: Cumulative displacement for Sensor 2 and y axis
+
+   Cumulative displacement for Sensor 2 and y axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_z.png
+   :name: psd_cumul_disp_sensor_2_axis_z
+   :target: _psd_cumul_disp_sensor_2_axis_z.png
+   :alt: Cumulative displacement for Sensor 2 and z axis
+
+   Cumulative displacement for Sensor 2 and z axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_x.png
+   :name: psd_cumul_disp_sensor_3_axis_x
+   :target: _psd_cumul_disp_sensor_3_axis_x.png
+   :alt: Cumulative displacement for Sensor 3 and x axis
+
+   Cumulative displacement for Sensor 3 and x axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_y.png
+   :name: psd_cumul_disp_sensor_3_axis_y
+   :target: _psd_cumul_disp_sensor_3_axis_y.png
+   :alt: Cumulative displacement for Sensor 3 and y axis
+
+   Cumulative displacement for Sensor 3 and y axis
+
+.. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_z.png
+   :name: psd_cumul_disp_sensor_3_axis_z
+   :target: _psd_cumul_disp_sensor_3_axis_z.png
+   :alt: Cumulative displacement for Sensor 3 and z axis
+
+   Cumulative displacement for Sensor 3 and z axis
