@@ -111,7 +111,7 @@ Telemetry
 
    Acceleration measured by dc accelerometers for all FCUs at 100% (blue) and all off (orange).
 
-From Figure 1 and 3 we see that the FCU running at 100% has a measurable effect on M1M3 as seen by the accelerometers (VMS or dc). It is unclear if the effect observed on Figure 2 
+From Figure 2 and 4 we see that the FCU running at 100% has a measurable effect on M1M3 as seen by the accelerometers (VMS or dc). It is unclear if the effect observed on Figure 3 
 (Hard points forces) is related to the FCU or to some other source. 
 
 Power Spectral Density (PSD) analysis
