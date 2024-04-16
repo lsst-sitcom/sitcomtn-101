@@ -4,7 +4,7 @@ Investigation into vibrations in the M1M3 surrogate due to FCUs
 
 .. abstract::
 
-   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality
+   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Cooling Units (FCUs) are likely to have on image quality
 
 
 
@@ -19,23 +19,11 @@ Investigation into vibrations in the M1M3 surrogate due to FCUs
 Introduction
 ============
 
-.. Assuming units of VMS = mg
-.. -displacement for total_1
-..  FCU on = 41.55 μm
-..  FCU off = 2.30 μm
-.. -displacement for total_2
-..  FCU on = 11.56 μm
-..  FCU off = 2.21 μm
-.. -displacement for total_3
-..  FCU on = 46.05 μm
-..  FCU off = 1.94 μm
-
-
 This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality.
 Primarily we use the Vibration Monitoring System (VMS) attached to M1M3 (for more information see the 
 `VMS confluence page <https://confluence.lsstcorp.org/pages/viewpage.action?pageId=156502157>`_).
 The description of the FCU is avaiable in 
-`SPIE 77331E <https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7733/77331E/LSST-primarytertiary-mirror-thermal-control-system/10.1117/12.857438.short#_=_>`_.
+`SPIE 77331E <https://doi.org/10.1117/12.857438>`_.
 
 The VMS data are stored in a single hdf5 data file (/sdf/data/rubin/shared/mtm1m3_test_files/vms_data/2023/12/M1M3-2023-12-07T00:00.hdf) acquired on 2023/12/07. A description of the 
 data taking procedure with exact timing is available in a log file attached to the JIRA ticket `SITCOM-1131 <https://rubinobs.atlassian.net/browse/SITCOM-1131>`_ associated to this Technical Note. 
@@ -123,15 +111,15 @@ Telemetry
 
    Acceleration measured by dc accelerometers for all FCUs at 100% (blue) and all off (orange).
 
-We clearly see that the FCU running at 100% has a measurable effect on M1M3. In the following section we will try to characterize this effect
-and check how it behaves while varying the fan speed.
+From Figure 1 and 3 we see that the FCU running at 100% has a measurable effect on M1M3 as seen by the accelerometers (VMS or dc). It is unclear if the effect observed on Figure 2 
+(Hard points forces) is related to the FCU or to some other source. 
 
+Power Spectral Density (PSD) analysis
+=====================================
 
-PSD analysis
-============
-
-For clarity reason and as we have multiple plots corresponding to the three sensors (accelerometers) each measuring the acceleration along 3 axes and for 11 values of the fan speed we
-choose to show only typical plots in this section. The whole set of plots will be given in the appendix.
+We perform a PSD analysis on the datasets, cutting contributions from frequencies below 1 Hz. 
+For clarity reasons and as we have multiple plots corresponding to the three sensors (accelerometers), each measuring the acceleration along 3 axes and for 11 values of the fan speed, we
+choose to show only a typical subset of plots in this section. The whole set of plots will be given in the appendix.
 
 Acceleration
 ------------
@@ -177,7 +165,7 @@ The following plot shows the cumulative displacement computed for Sensor 1 and x
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_x.png
    :name: psd_cumul_disp_sensor_1_axis_x
-   :target: _psd_cumul_disp_sensor_1_axis_x.png
+   :target: _images/_psd_cumul_disp_sensor_1_axis_x.png
    :alt: Cumulative displacement for Sensor 1 and x axis
 
    Cumulative displacement for Sensor 1 and x axis
@@ -345,63 +333,63 @@ In this appendix we put all the plots corresponding to the PSD analysis for the 
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_x.png
    :name: psd_cumul_disp_sensor_1_axis_x_b
-   :target: _psd_cumul_disp_sensor_1_axis_x.png
+   :target: _images/_psd_cumul_disp_sensor_1_axis_x.png
    :alt: Cumulative displacement for Sensor 1 and x axis
 
    Cumulative displacement for Sensor 1 and x axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_y.png
    :name: psd_cumul_disp_sensor_1_axis_y
-   :target: _psd_cumul_disp_sensor_1_axis_y.png
+   :target: _images/_psd_cumul_disp_sensor_1_axis_y.png
    :alt: Cumulative displacement for Sensor 1 and y axis
 
    Cumulative displacement for Sensor 1 and y axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_1_axis_z.png
    :name: psd_cumul_disp_sensor_1_axis_z
-   :target: _psd_cumul_disp_sensor_1_axis_z.png
+   :target: _images/_psd_cumul_disp_sensor_1_axis_z.png
    :alt: Cumulative displacement for Sensor 1 and z axis
 
    Cumulative displacement for Sensor 1 and z axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_x.png
    :name: psd_cumul_disp_sensor_2_axis_x
-   :target: _psd_cumul_disp_sensor_2_axis_x.png
+   :target: _images/_psd_cumul_disp_sensor_2_axis_x.png
    :alt: Cumulative displacement for Sensor 2 and x axis
 
    Cumulative displacement for Sensor 2 and x axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_y.png
    :name: psd_cumul_disp_sensor_2_axis_y
-   :target: _psd_cumul_disp_sensor_2_axis_y.png
+   :target: _images/_psd_cumul_disp_sensor_2_axis_y.png
    :alt: Cumulative displacement for Sensor 2 and y axis
 
    Cumulative displacement for Sensor 2 and y axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_2_axis_z.png
    :name: psd_cumul_disp_sensor_2_axis_z
-   :target: _psd_cumul_disp_sensor_2_axis_z.png
+   :target: _images/_psd_cumul_disp_sensor_2_axis_z.png
    :alt: Cumulative displacement for Sensor 2 and z axis
 
    Cumulative displacement for Sensor 2 and z axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_x.png
    :name: psd_cumul_disp_sensor_3_axis_x
-   :target: _psd_cumul_disp_sensor_3_axis_x.png
+   :target: _images/_psd_cumul_disp_sensor_3_axis_x.png
    :alt: Cumulative displacement for Sensor 3 and x axis
 
    Cumulative displacement for Sensor 3 and x axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_y.png
    :name: psd_cumul_disp_sensor_3_axis_y
-   :target: _psd_cumul_disp_sensor_3_axis_y.png
+   :target: _images/_psd_cumul_disp_sensor_3_axis_y.png
    :alt: Cumulative displacement for Sensor 3 and y axis
 
    Cumulative displacement for Sensor 3 and y axis
 
 .. figure:: /_static/images/psd_cumul_disp_sensor_3_axis_z.png
    :name: psd_cumul_disp_sensor_3_axis_z
-   :target: _psd_cumul_disp_sensor_3_axis_z.png
+   :target: _images/_psd_cumul_disp_sensor_3_axis_z.png
    :alt: Cumulative displacement for Sensor 3 and z axis
 
    Cumulative displacement for Sensor 3 and z axis
