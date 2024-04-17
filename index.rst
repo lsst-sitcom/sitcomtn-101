@@ -124,8 +124,8 @@ choose to show only a typical subset of plots in this section. The whole set of 
 Acceleration
 ------------
 
-In the following plot we show the PSD acceleration for sensor 1 - z axis and for every fan speed. We see that there is a narrow peak at about 38 Hz which is visible
-for almost every speed. As the peak is present when the fans are not running, it is clear that its origin is not rekated to the FCU.
+In the following plot we show the PSD acceleration for sensor 3 - z axis and for every fan speed. We see that there is a narrow peak at about 38 Hz which is visible
+for almost every speed. As the peak is present when the fans are not running, it is clear that its origin is not related to the FCU.
 
 .. figure:: /_static/images/psd_sensor_3_axis_z.png
    :name: psd_sensor_3_axis_z
@@ -170,7 +170,7 @@ The following plot shows the cumulative displacement computed for Sensor 1 and x
 
    Cumulative displacement for Sensor 1 and x axis
 
-As expected the highest contributions to the displacement is coming from the the low frequencies. The effect of the FCU on the displacement is only noticeable for the first dataset
+As expected the highest contributions to the displacement is coming from the low frequencies. The effect of the FCU on the displacement is only noticeable for the first dataset
 with fans running at 100% speed. This effect is not visible in the second 100% speed dataset (which is much shorter). The same behavior is observable for all the sensors and all
 the axes.
 
