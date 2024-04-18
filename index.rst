@@ -1,20 +1,11 @@
-###############################################################
-Investigation into vibrations in the M1M3 surrogate due to FCUs
-###############################################################
+########################################################################################
+Investigation into vibrations in the M1M3 surrogate on the TMA due to the Fan Coil Units
+########################################################################################
 
 .. abstract::
 
-   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Cooling Units (FCUs) are likely to have on image quality
+   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality
 
-
-
-.. Metadata such as the title, authors, and description are set in metadata.yaml
-
-.. TODO: Delete the note below before merging new content to the main branch.
-
-.. note::
-
-   **This technote is a work-in-progress.**
 
 Introduction
 ============
@@ -66,9 +57,12 @@ Times of events
 
 Data quality
 ============
-We have checked that the TMA was not moving during this test and that the mirror was raised (MTM1M3.logevent_detailedState == ACTIVEENGINEERING) with Hard Point in standby mode. 
+We have checked that the TMA was not moving during this test (Azimuth: -25.95 deg - Elevation: 89.95 deg) and that the mirror was raised (MTM1M3.logevent_detailedState == ACTIVEENGINEERING) 
+with Hard Point in standby mode. 
 
-The second test was to check the VMS accelerometers sampling rate which is supposed to be 200 Hz. To do so, we compute the time difference (*delta t*) between consecutive samples.
+We also checked that during the whole duration of the test, the Force Balance System was turned off.
+
+The next test was to check the VMS accelerometers sampling rate which is supposed to be 200 Hz. To do so, we compute the time difference (*delta t*) between consecutive samples.
 In the following plot (left), we see that while most of the samples are separated by ~0.005s (200 Hz), some samples are separated by ~0.00444s. If we plot *delta t* as a function of 
 the sample number (right plot) we see that this feature is periodic and could potentially impact the PSD analyses. This issue has been reported as a bug in the JIRA ticket 
 `DM-43219 <https://rubinobs.atlassian.net/browse/DM-43219>`_. Petr Kubanek pointed that the 200 Hz sampling rate is fixed by the hardware, so the observed behavior is probably due to a 
