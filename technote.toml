@@ -14,7 +14,7 @@ orcid = "https://orcid.org/0000-0003-4887-2150"
 [[technote.authors.affiliations]]
 name = "Université Grenoble-Alpes"
 internal_id = "LAPP"
-address = "Université Savoie Mont Blanc, CNRS/IN2P3 Laboratoire d'Annecy-le-Vieux de Physique des Particules, 9 Chemin de Bellevue – BP 110, F-74940 Annecy-le-Vieux Cedex, France"
+address = "LAPP, Université Savoie Mont Blanc, CNRS/IN2P3, Annecy; France."
 
 [[technote.authors]]
 name = {given = "Peter S.", family = "Ferguson"}
@@ -30,7 +30,7 @@ name = {given = "Andrea", family = "Jeremie"}
 [[technote.authors.affiliations]]
 name = "Université Grenoble-Alpes"
 internal_id = "LAPP"
-address = "Université Savoie Mont Blanc, CNRS/IN2P3 Laboratoire d'Annecy-le-Vieux de Physique des Particules, 9 Chemin de Bellevue – BP 110, F-74940 Annecy-le-Vieux Cedex, France"
+address = "LAPP, Université Savoie Mont Blanc, CNRS/IN2P3, Annecy; France."
 
 [technote.sphinx.linkcheck]
 ignore = ['^_images/']
