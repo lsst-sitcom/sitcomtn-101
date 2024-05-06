@@ -148,6 +148,8 @@ For comparison we show the same plot but for sensor 1 and y axis.
 
    PSD acceleration for sensor 1 - y axis and for every fan speed
 
+On this plot and for 100% speed we notice that there is also a large narrow peak ~42 Hz that could be related to the fan rotation speed (2550 rpm corresponds to 42 Hz).
+
 The following plot is showing the PSD acceleration for a fan speed set at 80% and for the 3 sensors and the 3 axes. 
 
 .. figure:: /_static/images/psd_speed_80.png
