@@ -4,19 +4,23 @@ Investigation into vibrations in the M1M3 surrogate on the TMA due to the Fan Co
 
 .. abstract::
 
-   This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality
+   This technical note analyzes data from the Vibration Monitoring System (VMS), dc accelerometers, and the Independent Measurement System (IMS) to assess how the operation of Fan Coil Units (FCUs) might impact image quality.
 
 
 Introduction
 ============
 
-This technote uses data from the VMS, dc accelerometers and IMS to estimate the effect of the Fan Coil Units (FCUs) are likely to have on image quality.
+This technical note analyses data from the Vibration Monitoring System (VMS), dc accelerometers and Independant Measurement System (IMS) to assess how the operation of Fan Coil Units (FCUs) might impact image quality.
 Primarily we use the Vibration Monitoring System (VMS) attached to M1M3 (for more information see the 
 `VMS confluence page <https://confluence.lsstcorp.org/pages/viewpage.action?pageId=156502157>`_).
 The description of the FCU is avaiable in 
 `SPIE 77331E <https://doi.org/10.1117/12.857438>`_.
 
-The VMS data are stored in a single hdf5 data file (/sdf/data/rubin/shared/mtm1m3_test_files/vms_data/2023/12/M1M3-2023-12-07T00:00.hdf) acquired on 2023/12/07. A description of the 
+The VMS data are stored in a single hdf5 data file:
+
+   /sdf/data/rubin/shared/mtm1m3_test_files/vms_data/2023/12/M1M3-2023-12-07T00:00.hdf
+   
+acquired on 2023/12/07. A description of the 
 data taking procedure with exact timing is available in a log file attached to the JIRA ticket `SITCOM-1131 <https://rubinobs.atlassian.net/browse/SITCOM-1131>`_ associated to this Technical Note. 
 The timing of each data taking period corresponding to the various fan speeds expressed in percent of the maximum speed is deduced from the log file.
 
@@ -57,10 +61,13 @@ Times of events
 
 Data quality
 ============
-We have checked that the TMA was not moving during this test (Azimuth: -25.95 deg - Elevation: 89.95 deg) and that the mirror was raised (MTM1M3.logevent_detailedState == ACTIVEENGINEERING) 
+We have checked that the TMA was not moving during this test (Azimuth: -25.95 deg - Elevation: 89.95 deg) and that the mirror was raised:  
+
+   MTM1M3.logevent_detailedState == ACTIVEENGINEERING
+
 with Hard Point in standby mode. 
 
-We also checked that during the whole duration of the test, the Force Balance System was turned off.
+We also checked that the Force Balance System was turned off during the whole duration of the test.
 
 The next test was to check the VMS accelerometers sampling rate which is supposed to be 200 Hz. To do so, we compute the time difference (*delta t*) between consecutive samples.
 In the following plot (left), we see that while most of the samples are separated by ~0.005s (200 Hz), some samples are separated by ~0.00444s. If we plot *delta t* as a function of 
@@ -140,6 +147,8 @@ For comparison we show the same plot but for sensor 1 and y axis.
    :alt: PSD acceleration for sensor 1 - y axis and for every fan speed
 
    PSD acceleration for sensor 1 - y axis and for every fan speed
+
+On this plot and for 100% speed we notice that there is also a large narrow peak ~42 Hz that could be related to the fan rotation speed (2550 rpm corresponds to 42 Hz).
 
 The following plot is showing the PSD acceleration for a fan speed set at 80% and for the 3 sensors and the 3 axes. 
 
