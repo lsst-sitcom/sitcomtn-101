@@ -1,0 +1,36 @@
+[technote]
+id = "SITCOMTN-101"
+series_id = "SITCOMTN"
+canonical_url = "https://sitcomtn-101.lsst.io/"
+github_url = "https://github.com/lsst-sitcom/sitcomtn-101"
+github_default_branch = "main"
+organization.name = "Vera C. Rubin Observatory"
+organization.ror = "https://ror.org/048g3cy84"
+license.id = "CC-BY-4.0"
+[[technote.authors]]
+name = {given = "Dominique", family = "Boutigny"}
+internal_id = "boutignyd"
+orcid = "https://orcid.org/0000-0003-4887-2150"
+[[technote.authors.affiliations]]
+name = "Université Grenoble-Alpes"
+internal_id = "LAPP"
+address = "LAPP, Université Savoie Mont Blanc, CNRS/IN2P3, Annecy; France."
+
+[[technote.authors]]
+name = {given = "Peter S.", family = "Ferguson"}
+internal_id = "fergusonps"
+orcid = "https://orcid.org/0000-0001-6957-1627"
+[[technote.authors.affiliations]]
+name = "Department of Physics"
+internal_id = "WisconsinMadison"
+address = "University of Wisconsin-Madison, Madison, WI 53706, USA"
+
+[[technote.authors]]
+name = {given = "Andrea", family = "Jeremie"}
+[[technote.authors.affiliations]]
+name = "Université Grenoble-Alpes"
+internal_id = "LAPP"
+address = "LAPP, Université Savoie Mont Blanc, CNRS/IN2P3, Annecy; France."
+
+[technote.sphinx.linkcheck]
+ignore = ['^_images/']
